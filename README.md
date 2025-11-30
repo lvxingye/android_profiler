@@ -14,9 +14,9 @@ profiler.start()
 And then FPS should be shown at the top right corner.  
 
 API ref:  
-`class Profiler`: Base class used in your app.
-`profiler.start()`: Start monitoring.
-`profiler.stop()`: Stsop monitoring.
+`class Profiler`: Base class used in your app.  
+`profiler.start()`: Start monitoring.  
+`profiler.stop()`: Stsop monitoring.  
 
 Tips:
 All files are in sub directory named `profiler`. And nothind in the sub directory `app`.   
