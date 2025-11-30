@@ -20,4 +20,4 @@ API ref:
 
 Tips:
 All files are in sub directory named `profiler`. And nothind in the sub directory `app`.   
-And please use the `Assemble Project` command from `build` to generate arr library(will be generated in the subdirectory `profiler/build/outputs/aar`).  
+And please use the `Assemble Project` command from `build` to generate arr library( will be generated in the subdirectory `profiler/build/outputs/aar` ).  
