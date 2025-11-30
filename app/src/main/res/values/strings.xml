@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">profiler</string>
+    <string name="debug_tag">lvxy.profiler</string>
+</resources>
