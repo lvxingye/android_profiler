@@ -34,10 +34,13 @@ class Profiler(application: Application) {
             frameData ->
             if(tvFrameData !=null){
                 val textFps= "FPS ${"%.1f".format(frameData.fps)}"
-                val textDropRate= "Drop/s ${"%.1f".format(frameData.drop_rate)}"
-                val textDropCount= "Drop ${"%d".format(frameData.drop_count)}"
-                tvFrameData!!.text ="$textFps\n$textDropRate\n$textDropCount"
-                Log.d(DEBUG_TAG,"$textFps $textDropRate $textDropCount")
+//                val textDropRate= "Drop/s ${"%.1f".format(frameData.drop_rate)}"
+//                val textDropCount= "Drop ${"%d".format(frameData.drop_count)}"
+
+                //show fps only as drop rate need to listen to vsync signals
+                //and haven't implemented yet
+                tvFrameData!!.text ="$textFps"
+                Log.d(DEBUG_TAG,"$textFps")
             }else{
                 Log.d(DEBUG_TAG,"Activity not start yet. Skipping capture frame data.")
             }
