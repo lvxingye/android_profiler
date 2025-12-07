@@ -2,6 +2,7 @@ package com.example.profiler
 
 import android.annotation.SuppressLint
 import android.app.Application
+import android.content.Context
 import android.util.Log
 import android.view.Choreographer
 import android.view.Gravity
@@ -19,6 +20,11 @@ class Profiler(application: Application) {
     private var tvFrameData: TextView?=null
 
     init {
+        //init xcrash
+        //from: https://github.com/iqiyi/xCrash.git
+        xcrash.XCrash.init(application)
+
+        //init my profiler
         lifecycleCallbacks=LifecycleCallbacks{
             activity ->
             tvFrameData= TextView(activity)
